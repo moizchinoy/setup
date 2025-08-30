@@ -1,7 +1,6 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
 
 export LANG="C.UTF-8"
-TERM="xterm-color"
 
 . ~/.bashrc
 
