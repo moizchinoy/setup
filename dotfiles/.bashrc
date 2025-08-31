@@ -115,3 +115,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+prompt_emojis=(⛽ 🚚 🚍 🚕 ⛵ 🚂 🚁 🚜 🐴 🐑 🐫 🐮 ⏰ 🔨 🚀 🚲 💊 🔫 🍄 🌴 🐐 🐓 ☕ 🏈 💉 🍍)
+emoji=${prompt_emojis[$(($RANDOM % ${#prompt_emojis[@]}))]} 
+PS1='\w $emoji '

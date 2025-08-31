@@ -12,15 +12,7 @@ ENV TZ=Australia/Sydney
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 WORKDIR /root
+COPY dotfiles .
+
 RUN mkdir -p ./.local/share
 RUN tldr --update
-
-COPY dotfiles /root/
-WORKDIR dotfiles
-RUN stow .
-
-WORKDIR /root
-
-RUN echo "prompt_emojis=(⛽ 🚚 🚍 🚕 ⛵ 🚂 🚁 🚜 🐴 🐑 🐫 🐮 ⏰ 🔨 🚀 🚲 💊 🔫 🍄 🌴 🐐 🐓 ☕ 🏈 💉 🍍)" >> ~/.bashrc && \
-    echo 'emoji=${prompt_emojis[$(($RANDOM % ${#prompt_emojis[@]}))]}' >> ~/.bashrc && \
-    echo "PS1='\w \$emoji '" >> .bashrc
