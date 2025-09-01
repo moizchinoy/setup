@@ -117,5 +117,7 @@ if ! shopt -oq posix; then
 fi
 
 prompt_emojis=(⛽ 🚚 🚍 🚕 ⛵ 🚂 🚁 🚜 🐴 🐑 🐫 🐮 ⏰ 🔨 🚀 🚲 💊 🔫 🍄 🌴 🐐 🐓 ☕ 🏈 💉 🍍)
-emoji=${prompt_emojis[$(($RANDOM % ${#prompt_emojis[@]}))]} 
+if [ "$emoji" = '' ]; then
+	export emoji=${prompt_emojis[$(($RANDOM % ${#prompt_emojis[@]}))]} 
+fi
 PS1='\w $emoji '
