@@ -121,3 +121,5 @@ if [ "$emoji" = '' ]; then
 	export emoji=${prompt_emojis[$(($RANDOM % ${#prompt_emojis[@]}))]} 
 fi
 PS1='\w $emoji '
+
+alias cal='ncal -bM'
