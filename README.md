@@ -18,6 +18,10 @@ make rebuild  # 6. Full reset: wipe everything and start fresh
 ```
 
 ## 📋 Notes
+To set the correct permissions on id_rsa file, run following command:
+```bash
+chmod 600 .ssh/id_rsa
+```
 Sometimes tmux displayed random garbage characters. Increasing the escape-time seems to resolve the issue.  
 [Garbage characters printed when attaching remote tmux session #18600](https://github.com/microsoft/terminal/issues/18600)  
 [Spurious OSC 11 when using tmux over Windows' SSH #18004](https://github.com/microsoft/terminal/issues/18004)
