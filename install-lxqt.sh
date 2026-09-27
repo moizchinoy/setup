@@ -1,4 +1,4 @@
-sudo apt update && \
+apt update && \
 	apt full-upgrade -y && \
 	apt install \
 	lxqt-core \
@@ -6,3 +6,5 @@ sudo apt update && \
 	git tmux neovim wget make \
 	python3 python3-pip \
 	podman -y
+
+curl -fsS https://dl.brave.com/install.sh | sh
