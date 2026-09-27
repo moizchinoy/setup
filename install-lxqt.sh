@@ -5,9 +5,12 @@ sudo apt full-upgrade -y
 sudo apt install -y \
 	lxqt-core \
 	lightdm \
+	lightdm-gtk-greeter-settings \
+	fonts-noto-color-emoji \
 	git \
 	tmux \
 	neovim \
+	micro \
 	wget \
 	make \
 	python3 \
