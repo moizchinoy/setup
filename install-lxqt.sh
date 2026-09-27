@@ -14,6 +14,7 @@ sudo apt install -y \
 	lxqt-core \
 	lightdm \
 	lightdm-gtk-greeter-settings \
+	light-locker \
 	fonts-noto-color-emoji \
 	git \
 	tmux \
