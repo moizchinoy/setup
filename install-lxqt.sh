@@ -1,4 +1,4 @@
-apt update && \
+sudo apt update && \
 	apt full-upgrade -y && \
 	apt install \
 	lxqt-core \
