@@ -16,6 +16,8 @@ sudo apt install -y \
 	lightdm-gtk-greeter-settings \
 	light-locker \
 	fonts-noto-color-emoji \
+	network-manager \
+	nm-tray \
 	git \
 	tmux \
 	neovim \
